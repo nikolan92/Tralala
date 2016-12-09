@@ -1,0 +1,24 @@
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\RedisDataLayer\bin\Debug\RedisDataLayer.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\RedisDataLayer\bin\Debug\RedisDataLayer.pdb
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\RedisDataLayer\bin\Debug\ServiceStack.Common.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\RedisDataLayer\bin\Debug\ServiceStack.Interfaces.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\RedisDataLayer\bin\Debug\ServiceStack.Redis.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\RedisDataLayer\bin\Debug\ServiceStack.Text.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\RedisDataLayer\bin\Debug\ServiceStack.Common.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\RedisDataLayer\bin\Debug\ServiceStack.Redis.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\RedisDataLayer\bin\Debug\ServiceStack.Text.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\RedisDataLayer\obj\Debug\RedisDataLayer.csprojResolveAssemblyReference.cache
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\RedisDataLayer\obj\Debug\RedisDataLayer.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\RedisDataLayer\obj\Debug\RedisDataLayer.pdb
+C:\Users\Nikola Nikolic\Desktop\Tralala\RedisDataLayer\bin\Debug\RedisDataLayer.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\RedisDataLayer\bin\Debug\RedisDataLayer.pdb
+C:\Users\Nikola Nikolic\Desktop\Tralala\RedisDataLayer\bin\Debug\ServiceStack.Common.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\RedisDataLayer\bin\Debug\ServiceStack.Interfaces.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\RedisDataLayer\bin\Debug\ServiceStack.Redis.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\RedisDataLayer\bin\Debug\ServiceStack.Text.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\RedisDataLayer\bin\Debug\ServiceStack.Common.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\RedisDataLayer\bin\Debug\ServiceStack.Redis.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\RedisDataLayer\bin\Debug\ServiceStack.Text.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\RedisDataLayer\obj\Debug\RedisDataLayer.csprojResolveAssemblyReference.cache
+C:\Users\Nikola Nikolic\Desktop\Tralala\RedisDataLayer\obj\Debug\RedisDataLayer.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\RedisDataLayer\obj\Debug\RedisDataLayer.pdb

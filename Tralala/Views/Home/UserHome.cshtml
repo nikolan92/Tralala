@@ -1,0 +1,594 @@
+﻿
+<script type="text/javascript">
+    var globalfollowingUsers = -1;
+
+    $(document).ready(function () {  
+        GetUserAndPosts();  
+    });
+    function GetUserAndPosts() {
+        $.ajax({
+            type: 'get',
+            url: '/api/User',
+            datatype: 'json',
+            //data: JSON.stringify(user),
+            //contentType: "application/json; charset=utf-8",
+            traditional: true,
+            success: function (data) {
+                if (data != null)
+                {
+                    PreviewUser(data);
+                    GetUserPosts();
+                }
+            }
+        });
+    }
+    function PreviewUser(user)
+    {  
+        var lastname = document.createElement("div");
+        $(lastname).html(user.LastName);
+        $(lastname).attr("id", "lastname");
+
+        var firstname = document.createElement("div");
+        $(firstname).html(user.FirstName);
+        $(firstname).attr("id", "firstname");
+
+        var userId = document.createElement("div");
+        $(userId).attr("id", "userId");
+        $(userId).attr("style", "display: none;");
+        $(userId).html(user.ID);
+
+        var userName = document.createElement("div");
+        $(userName).attr("id", "userName");
+        $(userName).attr("style", "display: none;");
+        $(userName).html(user.UserName);
+        
+
+        $("#userInfo").append(userId);
+        $("#userInfo").append(userName);
+        $("#userInfo").append(firstname);
+        $("#userInfo").append(lastname);
+
+    }
+    function GetUserPosts() {
+        if (typeof $("#userId").html() === "undefined")
+            return;
+
+        $.ajax({
+            type: 'get',
+            url: '/api/Posts?userId=' + $("#userId").html(),
+            datatype: 'json',//expected data
+            //data: JSON.stringify(user), 
+            //contentType: "application/json; charset=utf-8", //send data type
+            traditional: true,
+            success: function (data) {
+                if (data == null)
+                    return;
+                var posts = JSON.stringify(data);
+                $.each(data, function (posts, post) {
+                    //alert(post.Body);
+                    PreviewUserPosts(post, false);
+                });
+                $("#posts").fadeIn(1500);
+                //GetAllFollowingUser(false);
+            }
+        });
+    }
+    function PreviewUserPosts(post, newPost) {
+        var postForm = document.createElement("div");
+        $(postForm).attr("class", "well well-sm");
+
+        //adding post body
+        var body = document.createElement("div");
+        $(body).attr("class", "well");
+        $(body).html(post.Body);
+
+        $(postForm).append(body);
+        //
+        var divRow = document.createElement("div");
+        $(divRow).attr("class", "row");
+
+        //adding username
+        var username = document.createElement("div");
+        $(username).attr("class", "col-sm-4");
+        $(username).html("Posted by: @@" + post.UserName);
+
+        $(divRow).append(username);
+        //adding postId 
+        var postid = document.createElement("div");
+        $(postid).attr("class", "col-sm-4");
+        $(postid).attr("style", "visibility: hidden");
+        $(postid).attr("id", "postId");
+        $(postid).html(post.ID);
+
+        $(divRow).append(postid);
+        //adding time of the post
+        var posttime = document.createElement("div");
+        $(posttime).attr("class", "col-sm-4");
+        $(posttime).attr("style", "text-align:right");
+        //converting from unix time 
+        var dateTime = new Date(1000 * post.Time);
+        //
+        $(posttime).html("<span class=\"glyphicon glyphicon-time\"></span>  " + dateTime.toLocaleString());
+        //
+        $(divRow).append(posttime);
+        //
+        $(postForm).append(divRow);
+        //
+        if (newPost == true) {
+            $("#posts").prepend(postForm).hide();//ako je novi post onda ide na pocetak i samo jedan post je upitanju
+        } else {
+            $("#posts").append(postForm).hide();//slucaj kad se prikazuju svi userovi postovi jedan po jedan se apenduju
+        }
+    }
+    function AddPost() {
+        if ($("#postBody").val() === "") {
+            $("#postBody").attr("placeholder", "Ok say what are you want to say :)");
+            return;
+        }
+        if ($("#lastname").html() === "")
+            return;
+        if ($("#userId").html() === "")
+            return;
+
+        var post = {
+            Body: $("#postBody").val(),
+            UserID: $("#userId").html(),
+            UserName: $("#userName").html(),
+        }
+        $.ajax({
+            type: 'post',
+            url: '/api/Posts',
+            datatype: 'json',
+            data: JSON.stringify(post),
+            contentType: "application/json; charset=utf-8",
+            traditional: true,
+            success: function (data) {
+                if (data != null) {
+                    $("#postBody").val("");
+                    PreviewUserPosts(data, true);
+                    $("#posts").fadeIn(1500);
+                }
+            }
+        });
+    }
+   
+    function GetAllFollowingUsers() {// this is main function for loading timeLine posts (zato sto bez njenih podataka podaci ne mogu pravilno da se prikazu)
+        if (typeof $("#userId").html() === "undefined")
+            return;
+
+        $.ajax({
+            type: 'get',
+            url: '/api/Following?userId=' + $("#userId").html(),
+            datatype: 'json',//expected data
+            //data: JSON.stringify(user), 
+            //contentType: "application/json; charset=utf-8", //send data type
+            traditional: true,
+            success: function (data) {
+                if (data == null)
+                    return;
+                var followingUser = JSON.stringify(data);
+                //alert(followingUser);
+                DataIsReady(followingUser);//kad stigne response poziva se ova fun koja postavlja globalnu promenjivu (ako samo stavim globalfollowingUsers = followingUser; nesto nece?)ovako radi
+            }
+        });
+        function DataIsReady(data) {
+            globalfollowingUsers = data;
+            GetTimeLinePosts();
+        }
+    }
+    function GetTimeLinePosts() {
+        $.ajax({
+            type: 'get',
+            //url: '/api/Posts?userId=-1',
+            url: '/api/Posts',
+            datatype: 'json',//expected data
+            //data: JSON.stringify(user), 
+            //contentType: "application/json; charset=utf-8", //send data type
+            traditional: true,
+            success: function (data) {
+                if (data == null)
+                    return;
+                var posts = JSON.stringify(data);
+                //alert(globalfollowingUsers);
+                $("#posts").empty();
+
+                $.each(data, function (posts, post) {//FollowingIdEqualToAutorOfThePost proverava da li user prati usera ciji je post
+                    //ako ga prati prikazuje se unfollow dugme ako ne follow
+                    var following = FollowingIdEqualToAutorOfThePost(globalfollowingUsers, post.UserID);
+                    PreviewPostsFromTimeLine(post, following);
+
+                });
+                $("#posts").fadeIn(1000);
+                $("#addPostForm").show();
+            }
+        });
+    }
+    function PreviewPostsFromTimeLine(post,following) {
+        var postForm = document.createElement("div");
+        $(postForm).attr("class", "well well-sm");
+
+        //adding post body
+        var body = document.createElement("div");
+        $(body).attr("class", "well");
+        $(body).html(post.Body);
+
+        $(postForm).append(body);
+        //
+        var divRow = document.createElement("div");
+        $(divRow).attr("class", "row");
+
+        //adding username
+        var username = document.createElement("div");
+        $(username).attr("class", "col-sm-3");
+        $(username).html("Posted by: @@" + post.UserName);
+
+        $(divRow).append(username);
+        //adding follow button
+        if ($("#userId").html() != post.UserID)//ako je post.UserID jednak userovom id-u znaci da je taj post objavio sam user i u tom slucaju se ne prikazuje dugme 
+        {
+            if (following == true) {//slucaj ako pratim ovog usera
+                var btndiv = document.createElement("div");
+                $(btndiv).attr("class", "col-sm-3");
+
+                var followbtn = document.createElement("button");
+                $(followbtn).attr("onclick", "UnfollowUser(" + post.UserID + ",this,\"timeLine\")");
+                $(followbtn).attr("type", "button");
+                $(followbtn).attr("class", "btn btn-warning btn-sm");
+                $(followbtn).html("<span class=\"glyphicon glyphicon-minus\"></span> Unfollow");
+
+                $(btndiv).append(followbtn);
+                $(divRow).append(btndiv);
+            } else {//slucaj ako ne pratim ovog usera
+                var btndiv = document.createElement("div");
+                $(btndiv).attr("class", "col-sm-3");
+
+                var followbtn = document.createElement("button");
+                $(followbtn).attr("onclick", "FollowUser(" + post.UserID + ",this,\"timeLine\")");
+                $(followbtn).attr("type", "button");
+                $(followbtn).attr("class", "btn btn-success btn-sm");
+                $(followbtn).html("<span class=\"glyphicon glyphicon-plus\"></span> Follow");
+
+                $(btndiv).append(followbtn);
+                $(divRow).append(btndiv);
+            }
+        } else {
+            var btndiv = document.createElement("div");
+            $(btndiv).attr("class", "col-sm-3");//mora se doda da bi lepo ispisivao datum
+            $(divRow).append(btndiv);
+        }
+        //adding postId 
+        var postid = document.createElement("div");
+        $(postid).attr("class", "col-sm-3");
+        $(postid).attr("style", "visibility: hidden");
+        $(postid).attr("id", "postId");
+        $(postid).html(post.ID);
+
+        $(divRow).append(postid);
+        //adding time of the post
+        var posttime = document.createElement("div");
+        $(posttime).attr("class", "col-sm-3");
+        $(posttime).attr("style", "text-align:right");
+        //converting from unix time 
+        var dateTime = new Date(1000 * post.Time);
+        //
+        $(posttime).html("<span class=\"glyphicon glyphicon-time\"></span>  " + dateTime.toLocaleString());
+        //
+        $(divRow).append(posttime);
+        //
+        $(postForm).append(divRow);
+        //
+            $("#posts").append(postForm).hide();
+    }
+    function FollowingIdEqualToAutorOfThePost(allFollowingUsers,postUserId)
+    {
+        var userFollowingThisUser = false;
+        var afu = JSON.parse(allFollowingUsers);
+        $.each(afu, function (followingUsers, followingUser) {
+            if (followingUser.ID == postUserId)
+            {
+                userFollowingThisUser = true;
+                return false;//this break each loop
+            }
+        });
+        return userFollowingThisUser;
+    }
+    //
+    function FollowUser(followingUserId, btnObject, prewievOption) {
+
+        //prewievOption {timeLine, followersUser,followingUsers}
+        if (typeof $("#userId").html() === "undefined")
+            return;
+        if (typeof followingUserId === "undefined" || followingUserId == "")
+            return;
+        //alert(followingUserId);
+
+        var follow = {
+            UserID: $("#userId").html(),
+            FollowingID: followingUserId.toString()
+        }
+        $.ajax({
+            type: 'post',
+            url: '/api/Following',
+            datatype: 'json',
+            data: JSON.stringify(follow),
+            //data:follow,
+            contentType: "application/json; charset=utf-8",
+            traditional: true,
+            success: function (data) {
+                //$(btnObject).attr("class", "btn btn-warning btn-sm");
+                //$(btnObject).html("<span class=\"glyphicon glyphicon-minus\"></span> Unfollow");//ovde ce treba da se izmeni on clic atribut druga fun UnfollowUser()
+                //$(btnObject).attr("onclick", "UnfollowUser(" + followingUserId + ",this)");
+                if (prewievOption == "timeLine")
+                    GetAllFollowingUsers();//osvezavam globalnu promenjivu zato sto sad user prati novog usera
+                    //GetTimeLinePosts(); // mora da ide u document redi od "GetAllFollowingUser()"funkcije jer ova funkcija zavisi od predhodnog ajax responsa
+                else if (prewievOption == "followingUsers")
+                    PreviewFollowingUsers();
+                else if (prewievOption == "followersUser")
+                    PreviewFollowerUsers();
+            }
+        });
+    }
+    function UnfollowUser(followingUserId, btnObject, prewievOption)
+    {
+        //prewievOption {timeLine, followersUser,followingUsers}
+        if (typeof $("#userId").html() === "undefined")
+            return;
+        //alert(followingUserId);
+
+        var follow = {
+            UserID: $("#userId").html(),
+            FollowingID: followingUserId.toString()
+        }
+        $.ajax({
+            type: 'post',
+            url: '/api/Unfollow',
+            datatype: 'json',
+            data: JSON.stringify(follow),
+            //data:follow,
+            contentType: "application/json; charset=utf-8",
+            traditional: true,
+            success: function (data) {
+                //$(btnObject).attr("class", "btn btn-success btn-sm");
+               // $(btnObject).html("<span class=\"glyphicon glyphicon-plus\"></span> Follow");//ovde ce treba da se izmeni on clic atribut druga fun UnfollowUser()
+                //$(btnObject).attr("onclick", "FollowUser(" + followingUserId + ",this)");
+                if (prewievOption == "timeLine")
+                    GetAllFollowingUsers();//osvezavam globalnu promenjivu zato sto sad user prati novog usera
+                    //GetTimeLinePosts(); // mora da ide u document redi od "GetAllFollowingUser()"funkcije jer ova funkcija zavisi od predhodnog ajax responsa
+                else if (prewievOption == "followingUsers")
+                    PreviewFollowingUsers();
+                else if (prewievOption == "followersUser")
+                    PreviewFollowerUsers();
+            }   
+        });
+
+    }
+
+    function PreviewFollowingUsers()
+    {
+        if (typeof $("#userId").html() === "undefined")
+            return;
+
+        $.ajax({
+            type: 'get',
+            url: '/api/Following?userId=' + $("#userId").html(),
+            datatype: 'json',//expected data
+            //data: JSON.stringify(user), 
+            //contentType: "application/json; charset=utf-8", //send data type
+            traditional: true,
+            success: function (data) {
+                if (data == null)
+                    return;
+                var followingUsers = JSON.stringify(data);
+                Prewiev(followingUsers);
+                $("#posts").fadeIn(1000);
+            }
+        });
+        function Prewiev(data) {
+            $("#posts").empty();
+            $("#addPostForm").hide();
+            //alert(data);
+            followingUsers = $.parseJSON(data);
+            //alert(followingUsers);
+            $.each(followingUsers, function (key, followingUser) {
+                var userForm = document.createElement("div");
+                $(userForm).attr("class", "well");
+
+                var divRow = document.createElement("div");
+                $(divRow).attr("class", "row");
+
+                //userInfo
+                var firistAndLastName = document.createElement("div");
+                $(firistAndLastName).html(followingUser.FirstName + " " + followingUser.LastName + "<br>@@" + followingUser.UserName);
+                $(firistAndLastName).attr("class", "col-sm-6");
+
+                $(divRow).append(firistAndLastName);
+                //buttnon
+                var divbtn = document.createElement("div");
+                $(divbtn).attr("class", "col-sm-6");
+
+                var unfollowbtn = document.createElement("button");
+                $(unfollowbtn).attr("onclick", "UnfollowUser(" + followingUser.ID + ",this,\"followingUsers\")");
+                $(unfollowbtn).attr("type", "button");
+                $(unfollowbtn).attr("class", "btn btn-warning btn-xs");
+                $(unfollowbtn).html("<span class=\"glyphicon glyphicon-minus\"></span> Unfollow");
+                $(divbtn).append(unfollowbtn);
+
+                $(divRow).append(divbtn);
+                
+
+                $(userForm).append(divRow);
+                    $("#posts").append(userForm).hide();
+            });
+        }
+
+
+    }
+
+    function PreviewFollowerUsers()
+    {
+        if (typeof $("#userId").html() === "undefined")
+            return;
+        $.ajax({
+            type: 'get',
+            url: '/api/Following?userId=' + $("#userId").html(),
+            datatype: 'json',//expected data
+            //data: JSON.stringify(user), 
+            //contentType: "application/json; charset=utf-8", //send data type
+            traditional: true,
+            success: function (data) {
+                if (data == null)
+                    return;
+                var followingUser = JSON.stringify(data);
+                //alert(followingUser);
+                DataIsReady(followingUser);
+            }
+        });
+        function DataIsReady(data) {
+            globalfollowingUsers = data;
+            GetAllFollowerUsers();
+        }
+        function GetAllFollowerUsers()
+        {
+            $.ajax({
+                type: 'get',
+                url: '/api/Follower?userId=' + $("#userId").html(),
+                datatype: 'json',//expected data
+                //data: JSON.stringify(user), 
+                //contentType: "application/json; charset=utf-8", //send data type
+                traditional: true,
+                success: function (data) {
+                    if (data == null)
+                        return;
+                    var followerUsers = JSON.stringify(data); //da probam bez ovoga
+                    //alert(followingUser);
+                    Preview(followerUsers);
+                    $("#posts").fadeIn(1000);
+                }
+            });
+            function Preview(data) {
+                $("#posts").empty();
+                $("#addPostForm").hide();
+
+                var followerUsers = $.parseJSON(data);
+                //alert(followingUsers);
+                $.each(followerUsers, function (key, followerUser) {
+                    var userForm = document.createElement("div");
+                    $(userForm).attr("class", "well");
+
+                    var divRow = document.createElement("div");
+                    $(divRow).attr("class", "row");
+
+                    //userInfo
+                    var firistAndLastName = document.createElement("div");
+                    $(firistAndLastName).html(followerUser.FirstName + " " + followerUser.LastName + "<br>@@" + followerUser.UserName);
+                    $(firistAndLastName).attr("class", "col-sm-6");
+
+                    $(divRow).append(firistAndLastName);
+                    //buttnon
+
+                    var following = FollowingIdEqualToAutorOfThePost(globalfollowingUsers, followerUser.ID);
+                    if (following == true) {//slucaj ako pratim ovog usera
+                        var btndiv = document.createElement("div");
+                        $(btndiv).attr("class", "col-sm-6");
+
+                        var followbtn = document.createElement("button");
+                        $(followbtn).attr("onclick", "UnfollowUser(" + followerUser.ID + ",this,\"followersUser\")");
+                        $(followbtn).attr("type", "button");
+                        $(followbtn).attr("class", "btn btn-warning btn-sm");
+                        $(followbtn).html("<span class=\"glyphicon glyphicon-minus\"></span> Unfollow");
+
+                        $(btndiv).append(followbtn);
+                        $(divRow).append(btndiv);
+                    } else {//slucaj ako ne pratim ovog usera
+                        var btndiv = document.createElement("div");
+                        $(btndiv).attr("class", "col-sm-6");
+
+                        var followbtn = document.createElement("button");
+                        $(followbtn).attr("onclick", "FollowUser(" + followerUser.ID + ",this,\"followersUser\")");
+                        $(followbtn).attr("type", "button");
+                        $(followbtn).attr("class", "btn btn-success btn-sm");
+                        $(followbtn).html("<span class=\"glyphicon glyphicon-plus\"></span> Follow");
+
+                        $(btndiv).append(followbtn);
+                        $(divRow).append(btndiv);
+                    }
+
+                    $(userForm).append(divRow);
+                    $("#posts").append(userForm).hide();
+
+
+                });
+            }
+        }     
+    }
+    function LogOut() {
+        if (typeof $("#userId").html() === "undefined")
+            return;
+
+        $.ajax({
+            type: 'get',
+            url: '/api/User?userId=' + $("#userId").html(),
+            datatype: 'json',
+            //data: JSON.stringify(user),
+            //contentType: "application/json; charset=utf-8",
+            traditional: true,
+            success: function (data) {
+                $("#logOutBtn").html("Successfuly loged out!");
+                //$("#logOutBtn").html("Redirecting to home").delay(2000);
+                setTimeout(function () {
+                    window.location = "/Home";
+                }, 1000);
+            }
+        });
+    }
+</script>
+<style>
+    #userInfo {
+    text-align:center;
+    font-size:25px;
+    }
+
+</style>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <div class="navbar-brand">Tralala</div>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="/Home/UserHome"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li><a onclick="GetAllFollowingUsers()"><span class="glyphicon glyphicon-align-justify"></span> TimeLine</a></li>
+            <li><a onclick="PreviewFollowingUsers()"><span class="glyphicon glyphicon-eye-open"></span> Following</a></li>
+            <li><a onclick="PreviewFollowerUsers()"><span class="glyphicon glyphicon-user"></span> Followers</a></li>
+            @*<li ><a id="logOutBtn" onclick="LogOut()"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>*@
+        </ul>
+        <ul class="nav navbar-nav pull-right">
+            <li><a id="logOutBtn" onclick="LogOut()"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+        </ul>
+</div>
+</nav>
+
+<div class="container-fluid" style="font-family:Calibri">
+    <div class="row content">
+        <div class="col-sm-3 sidenav" style="text-align:center">
+        <img src="/Image/User.png" class="img-circle" alt="Cinque Terre" width="200" height="200">
+            <br>
+            <div id="userInfo"></div>
+            <br>  
+        </div>
+
+        <div class="col-sm-9">
+            <div class="row" id="addPostForm">
+               <div class="well well-sm">
+                    <label for="comment">Leave a post:</label>
+                    <textarea class="form-control" style="max-width:initial;resize:vertical" id="postBody" placeholder="What are you thinking :)"></textarea>
+                    <button style="margin-top: 2px;" type="button" onclick="AddPost()" class="btn btn-success"><span class="glyphicon glyphicon-send"> </span> Post</button>                
+                </div>
+            </div>
+            <div  class="row content">
+                <div id="posts">
+
+                </div>
+             </div>
+        </div>
+    </div>
+</div>

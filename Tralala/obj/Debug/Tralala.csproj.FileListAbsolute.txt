@@ -1,0 +1,249 @@
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\roslyn\csc.exe
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\roslyn\vbc.exe
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\roslyn\VBCSCompiler.exe
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Tralala.dll.config
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Tralala.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Tralala.pdb
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Antlr3.Runtime.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\EntityFramework.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\EntityFramework.SqlServer.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.Owin.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.Owin.Security.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Newtonsoft.Json.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Owin.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Net.Http.Formatting.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.Helpers.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.Http.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.Http.Owin.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.Http.WebHost.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.Mvc.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.Optimization.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.Razor.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.WebPages.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.WebPages.Razor.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\WebGrease.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Newtonsoft.Json.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Net.Http.Formatting.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.Helpers.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.Http.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.Http.WebHost.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.Mvc.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.Optimization.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.Razor.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.WebPages.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.WebPages.Razor.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Antlr3.Runtime.pdb
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\EntityFramework.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\EntityFramework.SqlServer.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.Owin.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.Owin.Security.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\bin\System.Web.Http.Owin.xml
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\obj\Debug\Tralala.csprojResolveAssemblyReference.cache
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\obj\Debug\Tralala.dll
+C:\Users\Zoran\Desktop\New folder (2)\Tralala\Tralala\obj\Debug\Tralala.pdb
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\roslyn\csc.exe
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\roslyn\System.Collections.Immutable.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\roslyn\System.Reflection.Metadata.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\roslyn\vbc.exe
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\roslyn\VBCSCompiler.exe
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\roslyn\VBCSCompiler.exe.config
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Tralala.dll.config
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Tralala.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Tralala.pdb
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Antlr3.Runtime.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\EntityFramework.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\EntityFramework.SqlServer.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.AspNet.Identity.Core.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.Owin.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.Owin.Security.Cookies.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.Owin.Security.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.Owin.Security.Facebook.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.Owin.Security.Google.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.Owin.Security.OAuth.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.Owin.Security.Twitter.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.Web.Infrastructure.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Newtonsoft.Json.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Owin.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\RedisDataLayer.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Net.Http.Formatting.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.Helpers.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.Http.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.Http.Owin.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.Http.WebHost.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.Mvc.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.Optimization.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.Razor.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.WebPages.Deployment.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.WebPages.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.WebPages.Razor.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\WebGrease.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\ServiceStack.Redis.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\ServiceStack.Interfaces.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\ServiceStack.Text.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\ServiceStack.Common.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\RedisDataLayer.pdb
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Newtonsoft.Json.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Net.Http.Formatting.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.Helpers.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.Http.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.Http.WebHost.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.Mvc.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.Optimization.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.Razor.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.WebPages.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.WebPages.Deployment.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.WebPages.Razor.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Antlr3.Runtime.pdb
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\EntityFramework.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\EntityFramework.SqlServer.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.AspNet.Identity.Core.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.Owin.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.Owin.Security.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.Owin.Security.Facebook.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.Owin.Security.Cookies.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.Owin.Security.Google.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.Owin.Security.Twitter.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\System.Web.Http.Owin.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\ServiceStack.Redis.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\ServiceStack.Text.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\bin\ServiceStack.Common.xml
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\obj\Debug\Tralala.csprojResolveAssemblyReference.cache
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\obj\Debug\Tralala.dll
+F:\Fax\IV godina\Semestar I\Napredne Baze Podataka\04Projekti\01Redis\Tralala\Tralala\Tralala\obj\Debug\Tralala.pdb
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\roslyn\csc.exe
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\roslyn\vbc.exe
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\roslyn\VBCSCompiler.exe
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Tralala.dll.config
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Tralala.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Tralala.pdb
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Antlr3.Runtime.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\EntityFramework.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\EntityFramework.SqlServer.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.Owin.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.Owin.Security.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Newtonsoft.Json.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Owin.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\RedisDataLayer.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Net.Http.Formatting.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.Helpers.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.Http.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.Http.Owin.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.Http.WebHost.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.Mvc.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.Optimization.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.Razor.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.WebPages.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.WebPages.Razor.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\WebGrease.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\ServiceStack.Redis.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\ServiceStack.Interfaces.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\ServiceStack.Text.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\ServiceStack.Common.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\RedisDataLayer.pdb
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Newtonsoft.Json.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Net.Http.Formatting.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.Helpers.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.Http.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.Http.WebHost.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.Mvc.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.Optimization.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.Razor.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.WebPages.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.WebPages.Razor.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Antlr3.Runtime.pdb
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\EntityFramework.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\EntityFramework.SqlServer.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.Owin.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.Owin.Security.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\System.Web.Http.Owin.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\ServiceStack.Redis.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\ServiceStack.Text.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\bin\ServiceStack.Common.xml
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\obj\Debug\Tralala.csprojResolveAssemblyReference.cache
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\obj\Debug\Tralala.dll
+C:\Users\Nikola Nikolic\Desktop\Tralala\Tralala\obj\Debug\Tralala.pdb

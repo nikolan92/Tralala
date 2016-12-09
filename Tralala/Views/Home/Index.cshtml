@@ -1,0 +1,66 @@
+﻿<script type="text/javascript">
+    //$(document).ready(function () {
+    //    $("#post-forma").submit(function (e) {
+    //        e.preventDefault();
+    //        //return false;
+    //    });
+    //});
+    function LogIn() {
+        if ($("#username").val() === "") {
+            $("#username").attr("placeholder", "Enter your username");
+            return;
+        }
+        if ($("#password").val() === "") {
+            $("#password").attr("placeholder", "Enter your password");
+            return;
+        }
+        var user = {
+            UserName:$("#username").val(),
+            Password: $("#password").val()
+        }
+
+        //$('#target').html("Sending...");
+
+        $.ajax({
+            type: 'post',
+            url: '/api/user',   
+            datatype: 'json',
+            contentType: "application/json; charset=utf-8",
+            traditional: true,
+            data: JSON.stringify(user),
+            success: function (data, textStatus, request) {
+                var result = jQuery.parseJSON(data);
+                //alert(result.message);
+                //alert(result.success);
+                if (result.success === "true")
+                    window.location.replace(request.getResponseHeader('Location'));
+                    //window.location.href = "/home/user"
+                else
+                    $("#target").html(result.message);
+                }
+        });
+
+
+    }
+</script>
+
+<div class="jumbotron" style="background-color:#d0d0d0">
+    <h1>Welcome to Tralala</h1>
+    
+</div>
+<div>
+    <form role="form">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" name="username" id="username" placeholder="Username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" name="password"id="password" placeholder="Password" required>
+        </div>
+        <div style="color:red" id="target"></div>
+        <button type="button" onclick="LogIn()" class="btn btn-default">LogIn</button>
+        <a href="~/Home/Registration">Register here</a>
+        @*@Html.ActionLink("Registration", "Registration", "Home")*@
+    </form>
+</div>
